@@ -1,0 +1,111 @@
+<!Doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">	<!--para reconocimineto de caracteres-->
+	<title>Estudiante</title> 	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale="1.0, maximum-scale=1.0, minimum-scale=1.0> <!--dimensiones pagina-->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!--importar libreria bootstrap.css-->
+	<link rel="stylesheet" href="css/estilos.css"> <!--importar lobreria estilos-->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">		
+			<div class="container">
+				<div class="navbar-header">
+					<!--iconos menu--> 
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-principal">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--titulo pagina-->
+					<a href="index.html" class="navbar-brand"> Evaluacion de Examenes en linea</a>
+				</div>
+				<!--Inicia menu-->
+				<div class="collapse navbar-collapse" id="navegacion-principal">
+					<ul class="nav navbar-nav navbar-right">
+						<!--Desplegable-->
+						<li><a href="#">Notificaciones</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Estudiante <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Perfil</a></li>
+								<li><a href="#">Configuracion</a></li>
+								<li><a href="#">Salir</a></li>
+							</ul>
+						</li>
+						<!--buscar curso-->
+						<form action="#" class="navbar-form navbar-right role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="buscar curso">
+							</div>
+							<button type="submint" class="btn btn-primary">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</form>
+					</ul>
+				</div>
+			</div>	
+		</nav>
+	</header>
+
+	<!--aplicar jumbotron-->
+	<section class="jumbotron jumbotron-est">
+		<div class="container">
+			<h3>Bienvenido a Evaluaciones TIS 2/2016</h3>
+			<p>Estas en la pagina del estudiante!</p>
+		</div>
+	</section>
+
+	<!--linea izquierda-->
+	<section class="main-container">
+		<div class="row">
+			<section class="post col-md-3">
+				<div class="columna"> <!-- miga de pan -->
+					<ol class="breadcrumb break-est">
+						<li><a href="#">Tus cursos</a></li>
+						<li><a href="#"></a></li>
+					</ol>
+				</div>
+				<section class="post">
+					<div class="columna"> <!-- miga de pan -->
+						<ol class="breadcrumb break-est">
+							<li><a href="#"></a></li>
+						</ol>
+					</div>
+				</section>
+				
+			</section>
+			<section class="post col-md-6">
+				<div class="columna"> <!-- miga de pan -->
+					<ol class="breadcrumb break-est">
+						<li><a href="#">************ Ultimos *************</a></li>
+					</ol>
+				</div>
+			</section>
+
+			<aside class="col-md-3 hidden-xs hidden-sm">
+				<h4>calendario</h4>
+				<!-- Datepicker -->
+				<h2 class="demoHeaders"></h2>
+				<div id="datepicker"></div>
+			</aside>
+		</div>
+	</section>
+
+	
+
+	<!--librerias jquery y bootstrap-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+  		$( function() { $( "#datepicker" ).datepicker(); } );
+  	</script>
+
+</body>
+</html>
+

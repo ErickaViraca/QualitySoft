@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>formulario</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale="1.0, maximum-scale=1.0, minimum-scale=1.0> <!--dimensiones pagina-->
+	<link rel="stylesheet" href="../css/bootstrap.css"> <!--importar libreria bootstrap.css-->
+	<link rel="stylesheet" href="../css/estilos.css"> <!--importar lobreria estilos-->
+	
+</head>
+<body class="bodyFormularioEstudiante">
+	<header>
+		
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">		
+			<div class="container">
+				<div class="navbar-header">
+					<!--titulo pagina-->
+					<a href="index.html" class="navbar-brand"> Evaluacion de Examenes en linea</a>
+				</div>
+			</div>	
+		</nav>
+
+
+	</header>
+	<!--inicio formulario-->
+	<div class="container">
+		<div class="starter-template">
+			<h1> Bienvenido al registro de Estudiante </h1>
+			<p class="lead"> Por favor llena los campos asignados </p>
+			<!--registro de formulario-->
+			<div align="center">
+			<form class="form" role="form" method="post" action="../php/registroEstudiante.php">
+				<div class="form-group">
+					<label>Ingresa usuario</label>
+					<input type="text" name="usuario" class="form-control" required="" placeholder="ingresa Usuario"></input>
+				</div>
+				<div class="form-group">
+					<label>Ingresar codigo SIS</label>
+					<input type="password" name="password" class="form-control" placeholder="codigo SIS" required="">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Registrarse</button>
+				</div>
+			</form>
+			</div>	
+		</div>
+	</div>
+
+
+
+	
+
+	
+
+<!--librerias jquery y bootstrap-->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

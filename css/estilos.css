@@ -1,0 +1,53 @@
+<!--boton de registro index - estudiante-->
+.jumbotron-est{
+	background: #428BCA;
+	color: #fff;
+	padding: 5px 0;
+	text-align: left;
+}
+<!--boton de registro index - docente-->
+.jumbotron-doc{
+	background: #22aa99;
+	color: #fff;
+	padding: 5px 0;
+	text-align: left;
+}
+<!--boton de lineas - docente - estudiante-->
+.break-est{
+	background: #7eb2df;
+}
+.break-doc{
+	background: #70dfd1;
+}
+<!--boton de registro index-->
+.starter-template{
+	padding: 40px 15px;
+	text-align: center;
+}
+input[type="email"]:focus:invalid{
+	border:1px solid red;
+	box-shadow:	0 0 5px red;
+}
+.inputform{
+	text-align: center;
+}
+<!--orden de datos formulario-->
+.form-group{
+	width: 50%;
+}
+.bodyFormularioDocente{
+	
+	background: url('../img/regDocente.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bodyFormularioEstudiante{
+	
+	background: url('../img/regEstudiante.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.examenes{
+	background: url('../img/examenes.jpg');
+	background-size: cover;
+}

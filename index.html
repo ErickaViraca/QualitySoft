@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">	<!--para reconocimineto de caracteres-->
+	<title>version 01</title> 	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale="1.0, maximum-scale=1.0, minimum-scale=1.0> <!--dimensiones pagina-->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!--importar libreria bootstrap.css-->
+	<link rel="stylesheet" href="css/estilos.css"> <!--importar lobreria estilos-->
+		
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">		
+			<div class="container">
+				<div class="navbar-header"> 
+					<!--iconos menu--> 
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-principal">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--titulo pagina-->
+					<a href="index.html" class="navbar-brand"> Evaluacion de Examenes en linea</a>
+				</div>
+				<!--Inicia registro responsivo-->
+				<div class="collapse navbar-collapse" id="navegacion-principal">
+					<form class="navbar-form navbar-right" role="form">
+						<input type="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required="">
+						<input type="password" name="password" class="form-control" placeholder="password" required="">
+						<button type="submit" class=" btn btn-primary">Ingresar</button>
+					</form>
+				</div>
+			</div>	
+		</nav>
+
+	</header>
+	<br>
+	<br>
+	<div class="banner-container" role="banner">
+		<h1>
+			Bienvenido a Evaluaciones TIS 2/2016
+		</h1>
+		<p>
+			La manera más segura y fácil para educadores de conectarse y colaborar con estudiantes, padres, y entre sí.
+		</p>
+		
+	</div>
+	<br>
+	<br>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>*************************************************</h3>
+	
+	<div class="container">
+		<h3>
+			Crea tu cuenta gratuita
+		</h3>
+		<button type="submit" class="btn btn-default" onClick=" window.location.href='formularios/formulariodocente.html'">Soy Docente</button>
+		<button type="submit" class="btn btn-default" onClick=" window.location.href='formularios/formularioestudiante.html'" >Soy Estudiante</button>
+	</div>
+	
+	<!--librerias jquery y bootstrap-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
